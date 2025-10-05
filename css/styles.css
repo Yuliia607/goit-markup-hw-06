@@ -336,6 +336,7 @@ img {
   max-width: 320px;
   padding: 72px 0;
 }
+
 .title-container {
   text-align: center;
   margin: 0 auto;
@@ -375,22 +376,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .intro {
+    max-width: 1157px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
-    max-width: 1157px;
-    padding: 112px 0;
-  }
-  @media (min-resolution: 2x) {
-    .intro {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office@2x.jpg);
-    }
+      url(../images/people-office@2x.jpg);
   }
 
   .intro-title {
@@ -404,9 +396,14 @@ img {
 }
 @media screen and (min-width: 1158px) {
   .intro {
-    max-width: 1440px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
   }
+
   .intro-button {
     margin-top: 48px;
   }
@@ -514,6 +511,9 @@ img {
 .team {
   background-color: #f4f4fd;
 }
+.team-member-container {
+  max-width: 296px;
+}
 .team-members {
   margin-bottom: 72px;
   text-align: center;
@@ -593,6 +593,9 @@ img {
   background-color: #404bbf;
 }
 @media screen and (min-width: 768px) {
+  .team-member-container {
+    max-width: 584px;
+  }
   .team-members-item {
     width: calc((100% - 24px) / 2);
   }
@@ -600,6 +603,9 @@ img {
 @media screen and (min-width: 1158px) {
   .team-members-item {
     width: calc((100% - 72px) / 4);
+  }
+  .team-member-container {
+    max-width: 1158px;
   }
 }
 /*PORTFOLIO*/
@@ -826,7 +832,12 @@ img {
     max-width: 264px;
   }
   .footer-container {
+    max-width: 584px;
+    text-align: left;
     justify-content: flex-start;
+  }
+  .footer-social-icons {
+    text-align: left;
   }
   .futer-subscribe-form {
     text-align: left;
@@ -842,6 +853,7 @@ img {
     gap: 24px;
   }
   .footer-container {
+    max-width: 1158px;
     align-items: baseline;
     flex-wrap: nowrap;
     text-align: center;
@@ -862,6 +874,9 @@ img {
     text-align: left;
   }
   .footer-social-icons {
+    text-align: left;
+  }
+  .footer-logo-text {
     text-align: left;
   }
 }
